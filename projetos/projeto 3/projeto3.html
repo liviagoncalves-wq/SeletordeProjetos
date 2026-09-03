@@ -1,0 +1,1848 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav {
+        background-image: linear-gradient(to right top, #0c2c5a, #002865, #00216f, #001877, #1a057c) !important;
+        color: white !important;
+        flex-wrap: wrap;
+    }
+
+    .tags {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        flex-wrap: wrap;
+    }
+
+    .nossa {
+        display: flex;
+        gap: 60px;
+        border-radius: 2px;
+        border-color: rgb(186, 145, 65);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        margin-bottom: 50px
+    }
+
+    .btn {
+        background-color: rgb(3, 122, 72) !important;
+        border: 0;
+    }
+
+    #btnpg1:hover {
+        background-color: rgb(65, 30, 30);
+        color: rgb(255, 255, 255) !important;
+        opacity: 1 !important;
+    }
+
+    .destaque {
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    .categories {
+        display: flex;
+        gap: 20px;
+        border-radius: 2px;
+        border-color: rgb(186, 145, 65);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    .others {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    .contato {
+        display: flex;
+        gap: 30px;
+        max-width: 1100px;
+        margin: 50px auto;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    .formulario {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+</style>
+
+<body>
+    <div>
+        <header id="inicio">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top nav" style="max-height: 10vh;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img width="60" height="45" src="./images/download.png" alt="puppy"
+                            class="d-inline-block align-text-top">
+
+                    </a>
+                    <h2>MedSync</h2>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent"
+                        style="display: flex;margin-left: 1100px;">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#inicio"
+                                    style="color: white">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#Destaques" style="color: white">Destaques</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Remedios" style="color: white!important;"></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false" style="color: white!important;">
+                                    Remédios & Catálogos
+                                </a>
+                                <ul class="dropdown-menu" style="background-color: #051863;">
+                                    <li><a class="dropdown-item" href="#categorias"
+                                            style="color: white!important;">Categorias</a></li>
+                                    <li><a class="dropdown-item" href="#Antialergicos"
+                                            style="color: white!important;">Antialérgicos</a></li>
+                                    <li><a class="dropdown-item" href="#Analgesico"
+                                            style="color: white!important;">Analgésico</a></li>
+                                    <li><a class="dropdown-item" href="#Vitaminas"
+                                            style="color: white!important;">Vitaminas</a></li>
+                                    <li><a class="dropdown-item" href="#Dermocosmeticos"
+                                            style="color: white!important;">Dermocosméticos</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Nossahistoria" style="color: white!important;">Nossa
+                                    história</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Contato" style="color: white!important;">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!--Home-->
+            <section id="inicio" style="min-height: 100vh;background-color:rgba(221, 218, 216, 0.5)rgba(221, 218, 216, 0.5);background-image: url(./images/fundo2.png);background-size:cover;
+            background-position: center;background-repeat: no-repeat;display: flex;flex-direction: column;align-items: center;
+            justify-content: center;">
+                <div
+                    style="display: flex;flex-direction: column;justify-content: center;margin-top: 250px;align-items: center;">
+                    <h1 style="color: white; font-size: 90px;font-family: Georgia, 'Times New Roman', Times, serif;">
+                        MedSync</h1>
+                    <p style="color: white;font-size: 15px;font-family: Georgia, 'Times New Roman', Times, serif;">
+                        "Saúde em
+                        perfeita sincronia"</p>
+                    <p style="color: white;font-size: 15px;font-family: Arial, Helvetica, sans-serif;">Sua farmácia de
+                        bairro em Rio Claro/SP.
+                        Oferecemos atendimento humanizado, orientação
+                        <br>farmacêutica de confiança e entrega ágil para cuidar da sua saúde integral.
+                    </p>
+                </div>
+                <div style="display: flex;align-items: center;gap: 10px;margin-top: 50px;">
+
+                    <div class="card-body">
+                        <a href="#categorias" class="btn btn-primary"
+                            style="background-color:transparent!important;border: 1px solid rgb(3, 122, 72);">
+                            Ver Remédios & Catálogo</a>
+                    </div>
+
+                    <div class="card-body">
+                        <a href="#Nossahistoria" class="btn btn-primary"
+                            style="background-color:transparent!important;border: 1px solid rgb(3, 122, 72);">
+                            Conheça Nossa História</a>
+                    </div>
+
+                </div>
+
+
+                <div class=" container-fluid tags" style="min-height: 30vh;color: white;">
+                    <div class="row justify-content-center text-center align-items-center">
+                        <div class="col-4"
+                            style="border: 1px solid white;border-radius: 10px;padding-right: 10px;width: 400px;height: 150px;">
+                            <img height="40px" width="40px" src="./images/atendimento.png">
+                            <h4>Atendimento Acolhedor</h4>
+                            <p>Escuta ativa e orientação médica para você e sua família</p>
+                        </div>
+                        <div class="col-4"
+                            style="border: 1px solid white;border-radius: 10px;padding-right: 10px;width: 400px;height: 150px;">
+                            <img height="55px" width="60px" src="./images/bairro.png">
+                            <h4>Farmácia de Bairro</h4>
+                            <p>Proximidade com a comunidade de Rio Claro/SP.</p>
+                        </div>
+                        <div class="col-4"
+                            style="border: 1px solid white;border-radius: 10px;padding-right: 10px;width: 400px;height: 150px;">
+                            <img height="50px" width="50px" src="./images/entrega.png">
+                            <h4>Entrega Rápida</h4>
+                            <p>Praticidade e agilidade para receber seus remédios em casa.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Destaques" style="min-height: 100vh;background-color:rgba(221, 218, 216, 0.5);background-position: center;background-repeat: no-repeat;display: flex;
+            justify-content: center;">
+                <div>
+                    <div style="display: flex;align-items: center;flex-direction: column;">
+                        <p
+                            style="font-family: Arial, Helvetica, sans-serif;color:rgb(3, 122, 72);;font-size: 16px;margin-top: 150px">
+                            MedSync</p>
+                        <h1
+                            style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 60px;color: rgb(65, 30, 30);margin-top: 5px;">
+                            Destaques
+                            <hr style="color: rgb(3, 122, 72);">
+                        </h1>
+
+                        <br>
+                    </div>
+
+                    <div class="destaque"
+                        style="display: flex;align-items: center;justify-content: center;margin-top: 20px;background-color: #00216f;width: 1300px;height: 500px;border-radius: 20px;">
+                        <div class="card" style="width:248px;max-width:100%;height: 450px;">
+                            <img style="height: 150px;width: 150px;margin-left: 85px;margin-top: 20px;"
+                                src="https://farmaciaindiana.vtexassets.com/arquivos/ids/260121-800-1067?v=637959250061370000&width=800&height=1067&aspect=true"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p
+                                    style="background-color:rgba(221, 218, 216, 0.5);color: white;border-radius: 5px;width: 65px;height: 20px;font-size: 12px;display: flex;align-items: center;justify-content: center;">
+                                    Analgésico</p>
+                                <h5 style="color: #051863;">Paracetamol 750mg</h5>
+                                <p>Alívio temporário de dores leves a moderadas associadas a gripes e resfriados.</p>
+                                <hr>
+                                <div>
+                                    <h5 style="color: rgb(3, 122, 72)">R$ 10,50</h5>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#MacaroniModal" style="margin-left: 100px;margin-top: -50px;">
+                                        Comprar
+                                    </button>
+                                </div>
+
+
+
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso</h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 248px;max-width: 100%;">
+                            <img style="height: 150px;width: 150px;margin-left: 85px;margin-top: 20px;"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvs8-OvJ2fEaTbPE09NI6g5d51E5ZJ7X9JJhJq1o4zxw&s"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p
+                                    style="background-color:rgba(221, 218, 216, 0.5);color: white;border-radius: 5px;width: 65px;height: 20px;font-size: 12px;display: flex;align-items: center;justify-content: center;">
+                                    Analgésico</p>
+                                <h5 style="color: #051863;">Dipirona Monoidratada 500mg</h5>
+                                <p>Indicado como analgésico e antitérmico para alívio rápido de dores e febre.</p>
+                                <hr>
+                                <div>
+                                    <h5 style="color: rgb(3, 122, 72)">R$ 8,90</h5>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#MacaroniModal" style="margin-left: 100px;margin-top: -50px;">
+                                        Comprar
+                                    </button>
+                                </div>
+
+
+
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso</h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 248px;max-width: 100%;">
+                            <img style="height: 150px;width: 150px;margin-left: 85px;margin-top: 20px;"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXL5wQFzmNvNgCaCcBviJhlY865G9eKbJVJWIFpB9dAuVRL4SRIjCmCjYU&s=10"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p
+                                    style="background-color: rgba(221, 218, 216, 0.5);color: white;border-radius: 5px;width: 60px;height: 20px;font-size: 12px;display: flex;align-items: center;justify-content: center;">
+                                    Vitamina</p>
+                                <h5 style="color: #051863;">Vitamina C Efervescente 1g</h5>
+                                <p>Auxílio no fortalecimento do sistema imunológico e ação antioxidante.</p>
+                                <hr>
+                                <div>
+                                    <h5 style="color: rgb(3, 122, 72)">R$ 14,90</h5>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#MacaroniModal" style="margin-left: 100px;margin-top: -50px;">
+                                        Comprar
+                                    </button>
+                                </div>
+
+
+
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso</h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+            </section>
+
+            <section id="categorias" style="min-height: 100vh;background-color:rgba(221, 218, 216, 0.5);background-position: center;background-repeat: no-repeat;display: flex;
+            justify-content: center;">
+                <div>
+                    <div style="display: flex;align-items: center;flex-direction: column;">
+                        <p
+                            style="font-family: Arial, Helvetica, sans-serif;color:rgb(186, 145, 65);font-size: 12px;margin-top: 80px">
+                            MEDSYNC</p>
+                        <h1
+                            style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 60px;color: rgb(65, 30, 30);margin-top: -20px;">
+                            Categorias</h1>
+                        <br>
+                    </div>
+
+                    <div class="categories" style="align-items: center;margin-top: 100px;">
+
+                        <div>
+                            <div class="card" style="width: 350px;max-width: 100%;">
+                                <img style="height: 150px;width: 150px;margin-left: 85px;margin-top: 20px;"
+                                    src="https://cdn.batitienda.com/baticloud/images/product_picture_6162db0ec5de44c1894787c7ccf8802e_638615805468043336_0_m.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="#Antialergicos" class="btn btn-primary">Antialérgicos</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card" style="width: 350px;max-width: 100%;">
+                                <img style="height: 150px;width: 150px;margin-left: 85px;margin-top: 20px;"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScYMjfhMieiADFavsZ1wXXLaHfxxzH4bwZmY0st0Qszjn2VEV9X_d9JuA&s=10"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="#Analgesicos" class="btn btn-primary">Analgésicos</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="card" style="width: 350px;max-width: 100%;">
+                                <img style="height: 150px;width: 150px;margin-left: 85px;margin-top: 20px;"
+                                    src="https://equaliv.vtexassets.com/arquivos/ids/159624/2_equaliv_facelift-produtos_Vitamina-C-10.jpg?v=638846346139400000"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="#Vitaminas" class="btn btn-primary">Vitaminas</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card" style="width: 350px;max-width: 100%;">
+                                <img style="height: 150px;width: 150px;margin-left: 85px;margin-top: 20px;"
+                                    src="https://cdn.media.amplience.net/i/deciem/Shop-by-step-img1?fmt=auto&$poi$&sm=aspect&w=500&aspect=4:3"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="#Dermocosmeticos" class="btn btn-primary">Dermocosméticos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="Antialergicos" style="min-height: 100vh;background-color:rgba(221, 218, 216, 0.5);background-position: center;background-repeat: no-repeat;display: flex;
+            justify-content: center;">
+                <div>
+                    <h2
+                        style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 60px;color: rgb(65, 30, 30);display: flex;align-items: center;justify-content: center;margin-top: 70px;">
+                        Antialérgicos</h2>
+                    <div class="others" style="margin-top: -5px;">
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                Loratadina</h5>
+                            <img height="180px"
+                                src="https://uploads.consultaremedios.com.br/product_variation_images/full/b004aa9285541d80d5269629a7009e6470cc5a71.png?1682706263"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso</h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                Fexofenadina</h5>
+                            <img height="180px"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR45JENYF_em3u6Fr7u26qWaooAzjBiciE-jlUGxC3zBA&s"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso</h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                Desloratadina</h5>
+                            <img height="180px" src="https://product-data.raiadrogasil.io/images/15276468.webp"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso</h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                Bilastina</h5>
+                            <img height="180px"
+                                src="https://d1jgmae0hcnr1i.cloudfront.net/Custom/Content/Products/14/81/148196_bilastina-20mg-c-30cp-p139524_m1_638418588002252035.webp"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso</h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="others">
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                Cetirizina</h5>
+                            <img height="180px"
+                                src="https://images.tcdn.com.br/img/img_prod/1283819/cetirizina_5mg_60_doses_1_20260513104956_00bbb03c35ad.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso</h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                Levocetirizina</h5>
+                            <img height="180px"
+                                src="https://promofarma.vtexassets.com/arquivos/ids/174238/1109955.Dicloridrato-de-Levocetirizina-5mg-10-Comprimidos-Revestidos-EMS-Generico.png?v=638611389095070000"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso
+                                                </h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                Maleato de dexclorfeniramina</h5>
+                            <img height="180px"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsxEr-2xAk8gAx9YtAYyYjCcXufwmWoAv6ZVMiwAlQkg&s"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso</h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                Hidroxizina</h5>
+                            <img height="180px"
+                                src="https://d3fwclp93k8y7o.cloudfront.net/Custom/Content/Products/04/67/0467_cloridrato-de-hidroxizina-nativita-farmaceutica-2mg-ml-caixa-com-1-frasco-com-100ml-de-solucao-de-uso-oral-seringa-do-p2664_m1_638211513263448840.webp"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso
+                                                </h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <section id="Analgesicos" style="min-height: 100vh;background-color:rgba(221, 218, 216, 0.5);background-position: center;background-repeat: no-repeat;display: flex;
+            justify-content: center;">
+                <div>
+                    <h2
+                        style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 60px;color: rgb(65, 30, 30);display: flex;align-items: center;justify-content: center;margin-top: 70px;">
+                        Analgésicos</h2>
+                    <div class="others" style="margin-top: -5px;">
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                Ibuprofeno</h5>
+                            <img height="180px"
+                                src="https://nexodata.vtexassets.com/arquivos/ids/220174-560-560/Ibuprofeno-400mg---Caixa-com-10-Comprimidos-Revestidos---7899547512748.webp?v=638533947438200000"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso</h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                Diclofenaco</h5>
+                            <img height="180px"
+                                src="https://www.drogariaminasbrasil.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/image/9673cf9a/diclofenaco-resinato-15-mg-ml-gotas-20-ml.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso</h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                Dipirona </h5>
+                            <img height="180px"
+                                src="https://www.drogasil.com.br/_next/image?url=https%3A%2F%2Fproduct-data.raiadrogasil.io%2Fimages%2F18697447.webp&w=3840&q=40"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso</h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                Paracetamol </h5>
+                            <img height="180px"
+                                src="https://www.drogasil.com.br/_next/image?url=https%3A%2F%2Fproduct-data.raiadrogasil.io%2Fimages%2F10724941.webp&w=3840&q=40"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso</h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="others">
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                Ácido acetilsalicílico</h5>
+                            <img height="180px"
+                                src="https://www.drogariaminasbrasil.com.br/media/webp/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/image/122007c61f/acido-acetilsalicilico-100mg-com-60-comprimidos-generico-eurofarma_jpg.webp"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso</h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                Cetorolaco</h5>
+                            <img height="180px"
+                                src="https://www.drogariaminasbrasil.com.br/media/webp/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/image/126759613a/trometamol-cetorolaco-10mg-10-comprimidos-sublinguais-generico-ems_jpg.webp"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso
+                                                </h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                Nimesulida</h5>
+                            <img height="180px"
+                                src="https://www.drogariaminasbrasil.com.br/media/webp/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/image/1227794498/nimesulida-100mg-com-12-comprimidos-generico-germed_jpg.webp"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso
+                                                </h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                Meloxicam</h5>
+                            <img height="180px"
+                                src="https://www.drogariaminasbrasil.com.br/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/image/19285472d/meloxicam-15mg-com-10-comprimidos-generico-ems.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso
+                                                </h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="Vitaminas" style="min-height: 100vh;background-color:rgba(221, 218, 216, 0.5);background-position: center;background-repeat: no-repeat;display: flex;
+            justify-content: center;">
+                <div>
+                    <h2
+                        style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 60px;color: rgb(65, 30, 30);display: flex;align-items: center;justify-content: center;margin-top: 70px;">
+                        Vitaminas</h2>
+                    <div class="others" style="margin-top: -5px;">
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                Vitamina A (Retinol)</h5>
+                            <img height="180px" src="https://product-data.raiadrogasil.io/images/12517219.webp"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso</h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                Vitamina D (Calciferol)</h5>
+                            <img height="180px"
+                                src="https://bemolfarma.vtexassets.com/arquivos/ids/160905-800-800?v=639023849274500000&width=800&height=800&aspect=true"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso</h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                Vitamina E (Tocoferol)</h5>
+                            <img height="180px"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxESeowUTL1uPlNOMjKo1dfqQux3ygFOFe9al-jp7PKmnOSPdBRefXFY0&s=10"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso</h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                Vitamina K (Filoquinona)</h5>
+                            <img height="180px"
+                                src="https://uploads.consultaremedios.com.br/product_variation_images/full/955b5df4a6081e56cd7ba30968dae2e14f95059a.jpg?1661267651"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso</h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="others">
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                Vitamina C (Ácido Ascórbico)</h5>
+                            <img height="180px"
+                                src="https://www.redoxon.com.br/sites/g/files/vrxlpx46866/files/2025-05/1._hero_image_-_10_comprimidos.png"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso</h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                B1 (Tiamina)</h5>
+                            <img height="180px" src="https://product-data.raiadrogasil.io/images/12517221.webp"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso
+                                                </h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                B2 (Riboflavina)</h5>
+                            <img height="180px" src="https://product-data.raiadrogasil.io/images/12517290.webp"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com
+                                                    sucesso
+                                                </h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                B3 (Niacina)</h5>
+                            <img height="180px"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNHeUsp-ngmyLynLwbUeDqg_bXc1Zn0BplK-kQw60XTg&s"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com
+                                                    sucesso
+                                                </h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Dermocosmeticos" style="min-height: 100vh;background-color:rgba(221, 218, 216, 0.5);background-position: center;background-repeat: no-repeat;display: flex;
+            justify-content: center;">
+                <div>
+                    <h2
+                        style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 60px;color: rgb(65, 30, 30);display: flex;align-items: center;justify-content: center;margin-top: 70px;">
+                        Dermocosméticos</h2>
+                    <div class="others" style="margin-top: -5px;">
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                Gel de Limpeza Principia GL-01</h5>
+                            <img height="180px"
+                                src="https://cdn.principiaskin.com/media/catalog/product/cache/a11fc81ad62814be31cd922a993aa5ec/p/r/principia-skincare-cosmeticos-gl-01-gel-limpeza-acido-salicilico-glicerina-1_3.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso</h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                La Roche-Posay Effaclar Concentrate</h5>
+                            <img height="180px" src="https://product-data.raiadrogasil.io/images/18684476.webp"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso</h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                Neutrogena Hydro Boost Water Gel</h5>
+                            <img height="180px"
+                                src="https://images.ctfassets.net/3zfcttr0ztpr/1SBponv8J9AfNK9othSgHP/ccdab359693164c2abe339e1fbfa7055/hb_water_gel_menor-pt-br?fm=jpg&w=1920&q=80"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#MacaroniModal">
+                                    Select
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso</h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 250px;max-width: 100%;">
+                            <h5
+                                style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                Calming Cream Creamy</h5>
+                            <img height="180px" src="https://m.media-amazon.com/images/I/61qskYliPCL.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#TunaModal">
+                                    Select
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                    aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <h5 style="text-align: center;">Adicionado ao carrinho com sucesso</h5>
+                                                <img style="margin-left: 195px;" width="80" height="80"
+                                                    src="https://img.icons8.com/fluency/48/ok--v1.png" alt="ok--v1" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    <img width="24" height="24"
+                                                        src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                        alt="shopping-cart--v1" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="others">
+                            <div class="card" style="width: 250px;max-width: 100%;">
+                                <h5
+                                    style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                    The Ordinary Niacinamide 10% + Zinc 1%</h5>
+                                <img height="180px"
+                                    src="https://m.media-amazon.com/images/I/51Y+eRfHVWL._AC_UF1000,1000_QL80_.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#MacaroniModal">
+                                        Select
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                        aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+
+                                                <div class="modal-body">
+                                                    <h5 style="text-align: center;">Adicionado ao carrinho com sucesso
+                                                    </h5>
+                                                    <img style="margin-left: 195px;" width="80" height="80"
+                                                        src="https://img.icons8.com/fluency/48/ok--v1.png"
+                                                        alt="ok--v1" />
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">
+                                                        <img width="24" height="24"
+                                                            src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                            alt="shopping-cart--v1" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 250px;max-width: 100%;">
+                                <h5
+                                    style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                    La Roche-Posay Effaclar Duo+ FPS 30</h5>
+                                <img height="180px"
+                                    src="https://www.drogaraia.com.br/_next/image?url=https%3A%2F%2Fproduct-data.raiadrogasil.io%2Fimages%2F12795901.webp&w=3840&q=40"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#MacaroniModal">
+                                        Select
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                        aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+
+                                                <div class="modal-body">
+                                                    <h5 style="text-align: center;">Adicionado ao carrinho com sucesso
+                                                    </h5>
+                                                    <img style="margin-left: 195px;" width="80" height="80"
+                                                        src="https://img.icons8.com/fluency/48/ok--v1.png"
+                                                        alt="ok--v1" />
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">
+                                                        <img width="24" height="24"
+                                                            src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                            alt="shopping-cart--v1" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 250px;max-width: 100%;">
+                                <h5
+                                    style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                    Principia Sérum AH-2 (Ácido Hialurônico + B5)</h5>
+                                <img height="180px" src="https://product-data.raiadrogasil.io/images/4655141.webp"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#MacaroniModal">
+                                        Select
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                        aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+
+                                                <div class="modal-body">
+                                                    <h5 style="text-align: center;">Adicionado ao carrinho com
+                                                        sucesso
+                                                    </h5>
+                                                    <img style="margin-left: 195px;" width="80" height="80"
+                                                        src="https://img.icons8.com/fluency/48/ok--v1.png"
+                                                        alt="ok--v1" />
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">
+                                                        <img width="24" height="24"
+                                                            src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                            alt="shopping-cart--v1" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 250px;max-width: 100%;">
+                                <h5
+                                    style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;color: rgb(65, 30, 30)">
+                                    Celimax Pore + Dark Spot Brightening Cream</h5>
+                                <img height="180px"
+                                    src="https://http2.mlstatic.com/D_Q_NP_2X_633508-MLB108733830901_032026-P.webp"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#MacaroniModal">
+                                        Select
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="MacaroniModal" tabindex="-1"
+                                        aria-labelledby="MacaroniModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+
+                                                <div class="modal-body">
+                                                    <h5 style="text-align: center;">Adicionado ao carrinho com
+                                                        sucesso
+                                                    </h5>
+                                                    <img style="margin-left: 195px;" width="80" height="80"
+                                                        src="https://img.icons8.com/fluency/48/ok--v1.png"
+                                                        alt="ok--v1" />
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">
+                                                        <img width="24" height="24"
+                                                            src="https://img.icons8.com/material-outlined/24/shopping-cart--v1.png"
+                                                            alt="shopping-cart--v1" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--nos-->
+            <section id="Nossahistoria" class="nossa"
+                style="min-height: 170vh;display:flex;background-color:rgba(221, 218, 216, 0.5);">
+                <div class="container-fluid">
+                    <div class="row" style="min-height: 100vh;margin-top: 70px;">
+                        <div class="col-12 col-md-6 d-flex flex-column  ">
+
+                            <div style="display: flex;justify-content: center;align-items: center;margin-top: 200px;">
+                                <img height="500px" src="./images/med.jpg" alt="">
+                            </div>
+                            <hr>
+                        </div>
+
+                        <div class="col-12 col-md-6 d-flex flex-column"
+                            style="background-color:rgba(221, 218, 216, 0.5)!important;display: flex;flex-wrap: wrap;">
+                            <div style="margin-top: 240px;">
+                                <p
+                                    style="color: rgb(186, 145, 65);font-size: 12px;font-family: Arial, Helvetica, sans-serif;margin-right: 730px;">
+                                    MEDSYNC</p>
+                                <h1
+                                    style="color: rgb(65, 30, 30);font-family: Georgia, 'Times New Roman', Times, serif;font-size:60px;margin-right: 400px;">
+                                    Nossa História
+                                </h1>
+                                <br>
+
+
+                                <p
+                                    style="font-size: 15px;font-family: Arial, Helvetica, sans-serif;text-align: left;margin-left: 70px;margin-right: 50px;">
+                                    A MedSync nasceu com o propósito de transformar a relação da comunidade com o
+                                    cuidado em saúde.
+                                    <br>
+                                    <br>
+                                    A empresa foi idealizada pelos professores Daniel, Eduardo e Grilo (Lázaro), a
+                                    partir do desejo de criar uma farmácia de bairro com atendimento mais próximo,
+                                    humano e acolhedor.
+                                    <br>
+                                    <br>
+                                    A motivação ganhou ainda mais significado quando o professor Grilo passou por um
+                                    período delicado de tratamento contra o câncer. Essa experiência mostrou, de forma
+                                    muito próxima, a importância de uma escuta ativa, de orientações claras e do acesso
+                                    facilitado a medicamentos de qualidade.
+                                    <br>
+                                    <br>
+                                    Hoje, a MedSync está expandindo sua atuação para o ambiente digital, buscando
+                                    atender ainda melhor as famílias e os moradores de Rio Claro/SP.
+                                </p>
+                                <div
+                                    style="border-left: 1px solid rgb(3, 122, 72);text-align: start;margin-left: 70px;margin-top: 50px;">
+                                    <h3 style="font-family: Arial, Helvetica, sans-serif;margin-left: 20px;">
+                                        <b>Cuidar vai além de oferecer medicamentos.</b>
+                                    </h3>
+
+                                    <p
+                                        style="font-size: 13px;font-family: Arial, Helvetica, sans-serif;margin-left: 20px;">
+                                        A essência da MedSync
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid" style="min-height: 70vh;">
+                        <div class="row justify-content-center text-center align-items-center">
+                            <div style="display: flex;justify-content: center;flex-direction: column;margin-top: 50px;">
+                                <p
+                                    style="color: rgb(186, 145, 65);font-size: 12px;font-family: Arial, Helvetica, sans-serif;">
+                                    O que nos representa</p>
+                                <h1
+                                    style="color: rgb(65, 30, 30);font-family: Georgia, 'Times New Roman', Times, serif;font-size:60px;">
+                                    Nossos valores
+                                </h1>
+                            </div>
+
+                            <div class="col-4"
+                                style="border: 1px solid rgb(3, 122, 72);width: 400px;gap: 10px;margin-top: 40px;">
+
+                                <h4>Acolhimento</h4>
+                                <p>Receber cada pessoa com respeito, atenção e proximidade.</p>
+                            </div>
+                            <div class="col-4" style="border: 1px solid rgb(3, 122, 72);width: 400px;margin-top: 40px;">
+
+                                <h4>Orientação</h4>
+                                <p>Valorizar informações claras para tornar o cuidado mais acessível.</p>
+                            </div>
+                            <div class="col-4" style="border: 1px solid rgb(3, 122, 72);width: 400px;margin-top: 40px;">
+
+                                <h4>Empatia</h4>
+                                <p>Entender que cada pessoa possui necessidades e histórias diferentes.</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <section id="Contato" style="min-height: 100vh;background-color: rgba(221, 218, 216, 0.5);
+            background-position: center;background-repeat: no-repeat;display: flex;flex-direction: column;align-items: center;
+            justify-content: center;">
+                <div class="contact" style="display: flex;flex-direction: column;justify-content: center;">
+                    <p
+                        style="color: rgb(186, 145, 65);font-size: 12px;font-family: Arial, Helvetica, sans-serif;margin-top: 90px;text-align: center;">
+                        MEDSYNC</p>
+                    <h1
+                        style="color: rgb(65, 30, 30); font-size: 70px;font-family: Georgia, 'Times New Roman', Times, serif;margin-top: -20px;">
+                        Contato</h1>
+
+
+                </div>
+
+                <div class="formulario" style="min-height: 400px;min-width: 80%;max-width: 60%;gap: 20px;">
+                    <div
+                        style="background-color: white;min-height: 400px;width:700px;;display: flex;border-radius: 20px;color: #2b120b;margin-top: 5px;">
+                        <form class="row g-3 needs-validation" novalidate style="margin-right: 10px;margin-left: 10px;">
+                            <div class="col-md-6">
+                                <label for="validationCustom01" class="form-label" style="margin-top: 5px;"><b>Nome
+                                        completo</b></label>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="validationCustom02" class="form-label"
+                                    style="margin-top: 5px;"><b>E-mail</b></label>
+                            </div>
+
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="validationCustom01"
+                                    placeholder="Digite seu nome" required
+                                    style="margin-top: -10px;border: 1px solid rgba(186, 146, 65, 0.304);">
+                                <div class="valid-feedback">Looks good!</div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="validationCustom02"
+                                    placeholder="seuemail@gmail.com" required
+                                    style="margin-top: -10px;border: 1px solid rgba(186, 146, 65, 0.304);">
+                                <div class="valid-feedback">Looks good!</div>
+                            </div>
+
+                            <div class="w-100 m-0"></div>
+
+                            <div class="col-12">
+                                <label for="validationCustom06" class="form-label"
+                                    style="margin-top: -10px;"><b>Mensagem</b></label>
+                            </div>
+
+                            <div class="col-12">
+                                <textarea class="form-control" id="validationCustom06" rows="3"
+                                    placeholder="Escreva sua dúvida ou mensagem"
+                                    style="margin-top: -10px;border: 1px solid rgba(186, 146, 65, 0.304);"></textarea>
+                            </div>
+
+                            <div class="col-12 text-center mt-4">
+                                <button class="btn btn-primary" type="submit"
+                                    style="width: 100%;background-color: rgb(186, 145, 65)!important;color: #2b120b;">Enviar
+                                    Mensagem
+                                </button>
+                            </div>
+                        </form>
+
+                    </div>
+
+                    <div class="formulario"
+                        style="background-color: white;min-height: 400px;width:700px;;display: flex;flex-direction: column;border-radius: 20px;color: #2b120b;margin-top: 5px;justify-content: center;margin-left: 20px;">
+                        <h1>Informações da Farmácia</h1>
+                        <p> <b>Endereço:</b> Rio Claro/SP</p>
+                        <p><b>Telefone:</b> (19)3500-0000</p>
+                        <p><b>E-mail:</b> contato@medsync.com.br</p>
+                        <p><b>Horário:</b> Segunda a Sábado: 08h ás 20h</p>
+                    </div>
+
+
+
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="mt-auto">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white;" aria-current="page" href="#">
+                        @2026 - Desenvolvimento de Sistemas
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+    </div>
+</body>
+
+</html>
